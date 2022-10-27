@@ -20,7 +20,9 @@ function App() {
         <p>
          {myName} is pretty damn cool.
         </p>
-{}
+{names.map(name => (
+  <button key={name} onClick = {() => setMyName(name)}>{name}</button>
+))}
 
         <button onClick={() => setMyName('Jaques')}>Jaques</button>
         <br/>
