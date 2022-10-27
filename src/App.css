@@ -1,4 +1,5 @@
 .App {
+  text-decoration: double crimson;
   text-align: center;
 }
 
@@ -11,10 +12,13 @@
   .App-logo {
     animation: App-logo-spin infinite 200s linear;
   }
+  .name {
+    color: #bd2aee;
+  }
 }
 
 .App-header {
-  background-color: #f7c3fb;
+  background-color: #2f262f8a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@ button{
   padding: 100px;
   color: aliceblue;
  background-color: rgba(242, 69, 179, 0.914)  ;
-  box-shadow: 1px 6px 7px 10px rgb(244, 153, 202);
+  box-shadow: 1px 1px 7px 0px rgb(244, 153, 202);
   size: large;
   border: solid rgb(180, 102, 239) 3.2mm ;
   border-right-color: #bd2aee;

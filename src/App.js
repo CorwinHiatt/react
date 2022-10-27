@@ -4,8 +4,8 @@ import './App.css';
 
 
 const names = ['Gustavo,', 'gerly', 'Cassandra',
- 'Mido', 'Carri', 'Brad',
- ]
+  'Mido', 'Carri', 'Brad',
+]
 
 
 function App() {
@@ -18,22 +18,22 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
-         {myName} is pretty damn cool.
+          {myName} is pretty damn cool.
         </p>
-{names.map(name => (
-  <button key={name} onClick = {() => setMyName(name)}>{name}</button>
-))}
+        {names.map(name => (
+          <button key={name} onClick={() => setMyName(name)}>{name}</button>
+        ))}
 
         <button onClick={() => setMyName('Jaques')}>Jaques</button>
-        <br/>
+        <br />
         <button onClick={() => setMyName('Don')}>Don</button>
-        <br/>
+        <br />
         <button onClick={() => setMyName('Corwin')}>Self</button>
-        
+
         <p>You clicked the button {counter} times</p>
         <button onClick={() => setCounter(counter - 1)}>-1</button>
         <button onClick={() => setCounter(counter + 1)}>+1</button>
-        <br/>
+        <br />
         <button onClick={() => setCounter(0)}>Refresh</button>
       </header>
     </div>
